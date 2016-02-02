@@ -6,6 +6,10 @@
 <h1>This is Jessi's About view.</h1>
 <p>Find me in app/views/welcome/about.html.erb</p>
 <p>My favorite color is <%= @color %></p>
+<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger" %>
+<%= link_to "Purple", about_path(color: "purple"), class: "btn btn-primary" %>
+<%= link_to "Pink", about_path(color: "pink"), class: "btn btn-primary" %>
 <% if @size > 12 %>
   <p>My shoe size is <%= @size %>. I have HUGE feet.</p>
 <% else %>
