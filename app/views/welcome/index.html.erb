@@ -1,0 +1,15 @@
+<h1>This is Jessi's index view.</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<p>I am from <%= @homeland %>. </p>
+<p>I would like to visit <ul>
+	<% @countries.each do |country| %>
+	<li><%= country %></li>
+	<% end %>
+	</ul>
+</p>
+<h2>Places I'll visit:</h2>
+
+
+<% @country_images.each do |country_image| %>
+	<%= image_tag country_image, height:200, width:200 %>
+<% end %>
